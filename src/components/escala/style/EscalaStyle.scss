@@ -1,0 +1,56 @@
+.escala{
+	width: 100vw;
+	.container{
+		h1{
+			text-align: center;
+			margin-top: 4rem;
+			margin-bottom: 2rem;
+		}
+		table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: .1rem solid #000000;
+            padding: .5rem;
+			text-align: center;
+        }
+        th {
+			background-color: #720000;
+			color: white;
+        }
+		td{
+			color: black;
+		}
+		.segunda-feira{
+			background: gray;
+			td{
+				color: white;
+			}
+		}
+
+		.quinta-feira{
+		background: lightblue;
+		}
+
+		.btn-gerar{
+			cursor: pointer;
+			background: #720000;
+			width: fit-content;
+			padding: .3rem 1.5rem;
+			border-radius: 2.21875rem;
+			color: white;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 1.2rem;
+			margin: 2rem auto 4rem auto;
+			transition: .2s;
+		}
+		.btn-gerar:hover{
+			transition: .2s;
+			background: #e39595;
+			color: #1f1f1f;
+		}
+
+	}
+}

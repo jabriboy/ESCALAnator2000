@@ -1,0 +1,52 @@
+.escala {
+  width: 100vw;
+}
+.escala .container h1 {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.escala .container table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.escala .container th, .escala .container td {
+  border: 0.1rem solid #000000;
+  padding: 0.5rem;
+  text-align: center;
+}
+.escala .container th {
+  background-color: #720000;
+  color: white;
+}
+.escala .container td {
+  color: black;
+}
+.escala .container .segunda-feira {
+  background: gray;
+}
+.escala .container .segunda-feira td {
+  color: white;
+}
+.escala .container .quinta-feira {
+  background: lightblue;
+}
+.escala .container .btn-gerar {
+  cursor: pointer;
+  background: #720000;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.3rem 1.5rem;
+  border-radius: 2.21875rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 2rem auto 4rem auto;
+  transition: 0.2s;
+}
+.escala .container .btn-gerar:hover {
+  transition: 0.2s;
+  background: #e39595;
+  color: #1f1f1f;
+}/*# sourceMappingURL=EscalaStyle.css.map */

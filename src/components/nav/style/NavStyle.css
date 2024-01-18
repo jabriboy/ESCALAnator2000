@@ -1,0 +1,31 @@
+nav {
+  background: #720000;
+}
+nav .container {
+  position: relative;
+  padding: 0.8rem 0;
+  display: flex;
+  align-items: center;
+}
+nav .container img {
+  margin: 0 auto;
+  height: 2rem;
+}
+nav .container .btn-admin {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  background: white;
+  padding: 0.2rem 1.5rem;
+  border-radius: 2.21875rem;
+  float: right;
+  color: #720000;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.2s;
+}
+nav .container .btn-admin:hover {
+  transition: 0.2s;
+  background: #1f1f1f;
+  color: white;
+}/*# sourceMappingURL=NavStyle.css.map */
