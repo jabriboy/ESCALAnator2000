@@ -42,14 +42,14 @@ function Escala(props) {
                 return(
                   <tr key={index} className={dayOfWeek}>
                     <td>
-                    {dayOfWeek === 'segunda-feira' ? currentDate.getDate() - 1 : currentDate.getDate()}/{currentDate.getMonth() + 1}
+                    {dayOfWeek === 'sábado' ? currentDate.getDate() + 1 : currentDate.getDate()}/{currentDate.getMonth() + 1}
                     </td>
                     <td>
-                      {dayOfWeek === 'segunda-feira' ? 'domingo noite' : dayOfWeek && dayOfWeek === 'domingo' ? 'domingo manhã' : dayOfWeek}
+                      {dayOfWeek === 'domingo' ? 'domingo noite' : dayOfWeek && dayOfWeek === 'sábado' ? 'domingo manhã' : dayOfWeek}
                     </td>
                     {props.escala.positions.map((_, indexI) => {
                       // c++
-                      return ['terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'domingo', 'segunda-feira'].includes(dayOfWeek) ? (
+                      return ['terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo'].includes(dayOfWeek) ? (
                       <td key={indexI}>
                         {index == 0 ? escala[indexI] : escala[indexI+((index)*props.escala.positions.length)]}
                       </td>

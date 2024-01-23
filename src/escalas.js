@@ -4,19 +4,19 @@ export const escalaMixagem = {
 	people: [
 		{
 			name: 'gabriel',
-			days: ['quinta', 'sexta', 'domingo noite']
+			days: ['quarta-feira', 'quinta-feira', 'sexta-feira', 'domingo']
 		},
 		{
 			name: 'silas',
-			days: ['quarta', 'sexta', 'domingo manhã']
+			days: ['quarta-feira', 'sábado']
 		},
 		{
 			name: 'luis',
-			days: ['quinta', 'sexta']
+			days: ['quinta-feira', 'sexta-feira']
 		},
 		{
 			name: 'alessandra',
-			days: ['terça']
+			days: ['terça-feira']
 		}
 	]
 }
@@ -26,34 +26,14 @@ export const escalaLouvor = {
 	positions: ['voz principal', 'back vocal', 'teclado', 'bateria', 'violão', 'guitarra', 'baixo'],
 	people: [
 		{
-			name: 'gabriel',
-			days: ['quinta', 'sexta', 'domingo noite'],
-			pos: ['voz principal', 'back vocal']
+			name: 'felipe',
+			days: ['terça-feira', 'quarta-feira', 'domingo'],
+			pos: ['voz principal', 'back vocal', 'teclado']
 		},
 		{
-			name: 'silas',
-			days: ['quarta', 'sexta', 'domingo manhã'],
-			pos: ['teclado']
-		},
-		{
-			name: 'luis',
-			days: ['quinta', 'sexta'],
-			pos: ['violão', 'guitarra']
-		},
-		{
-			name: 'alessandra',
-			days: ['terça'],
-			pos: ['bateria']
-		},
-		{
-			name: 'pedrinho',
-			days: ['quinta', 'sexta'],
-			pos: ['bateria']
-		},
-		{
-			name: 'pack',
-			days: ['quarta', 'domingo noite'],
-			pos: ['baixo']
+			name: 'felipe',
+			days: ['terça-feira', 'quarta-feira', 'domingo'],
+			pos: ['voz principal', 'back vocal', 'teclado']
 		}
 	]
 }
