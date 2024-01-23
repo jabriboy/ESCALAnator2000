@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .escala {
   width: 100vw;
 }
@@ -22,14 +23,17 @@
 .escala .container td {
   color: black;
 }
-.escala .container .segunda-feira {
+.escala .container .segunda-feira, .escala .container .domingo {
   background: gray;
 }
-.escala .container .segunda-feira td {
+.escala .container .segunda-feira td, .escala .container .domingo td {
   color: white;
 }
 .escala .container .quinta-feira {
   background: lightblue;
+}
+.escala .container .sábado {
+  background-color: black;
 }
 .escala .container .btn-gerar {
   cursor: pointer;

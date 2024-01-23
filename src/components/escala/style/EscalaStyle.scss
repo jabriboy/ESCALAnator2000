@@ -22,7 +22,7 @@
 		td{
 			color: black;
 		}
-		.segunda-feira{
+		.segunda-feira, .domingo{
 			background: gray;
 			td{
 				color: white;
@@ -31,6 +31,9 @@
 
 		.quinta-feira{
 		background: lightblue;
+		}
+		.sábado{
+			background-color: black;
 		}
 
 		.btn-gerar{
