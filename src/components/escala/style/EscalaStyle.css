@@ -53,4 +53,19 @@
   transition: 0.2s;
   background: #e39595;
   color: #1f1f1f;
+}
+
+@media screen and (max-width: 600px) {
+  .escala .container {
+    margin: 0 0.5rem;
+  }
+  .escala .container table {
+    font-size: 0.6rem;
+  }
+  .escala .container th {
+    padding: 0;
+  }
+  .escala .container td {
+    padding: 0;
+  }
 }/*# sourceMappingURL=EscalaStyle.css.map */

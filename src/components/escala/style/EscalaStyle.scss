@@ -8,7 +8,7 @@
 		}
 		table {
             border-collapse: collapse;
-            width: 100%;
+			width: 100%;
         }
         th, td {
             border: .1rem solid #000000;
@@ -57,3 +57,20 @@
 
 	}
 }
+
+@media screen and (max-width: 600px){
+	.escala{
+		.container{
+			margin: 0 .5rem;
+		  table{
+			font-size: .6rem;
+		  }
+		  th{
+			padding: 0;
+		  }
+		  td{
+			padding: 0;
+		  }
+		}
+	}
+  }
