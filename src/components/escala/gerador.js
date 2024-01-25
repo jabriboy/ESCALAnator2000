@@ -73,8 +73,15 @@ export const gerarEscala = (date, propsEscala, daysMonth) => {
 					
 					if(j == 0){
 						count = 0
+						var amount = 0
 						var vozes = []
-						while(count != 2){
+						if(days[i] == 'quarta-feira'){
+							amount = 1
+						}
+						else{
+							amount = 2
+						}
+						while(count != amount){
 							const numeroAleatorio = Math.random();
 							const indice = Math.floor(numeroAleatorio * propsEscala.people.length);
 							const novoNome = propsEscala.people[indice].name;
@@ -96,7 +103,13 @@ export const gerarEscala = (date, propsEscala, daysMonth) => {
 					else if(j == 1){
 						count = 0
 						var backs = []
-						while(count != 3){
+						if(days[i] == 'quarta-feira'){
+							amount = 4
+						}
+						else{
+							amount = 3
+						}
+						while(count != amount){
 							const numeroAleatorio = Math.random();
 							const indice = Math.floor(numeroAleatorio * propsEscala.people.length);
 							const novoNome = propsEscala.people[indice].name;
