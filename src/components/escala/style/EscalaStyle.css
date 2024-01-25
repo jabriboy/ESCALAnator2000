@@ -55,17 +55,22 @@
   color: #1f1f1f;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 400px) {
   .escala .container {
     margin: 0 0.5rem;
   }
   .escala .container table {
     font-size: 0.6rem;
   }
-  .escala .container th {
-    padding: 0;
+  .escala .container th, .escala .container td {
+    padding: 0.1rem 0.1rem;
   }
-  .escala .container td {
-    padding: 0;
+}
+@media screen and (max-width: 800px) and (min-width: 401px) {
+  .escala .container {
+    margin: 0 0.5rem;
+  }
+  .escala .container th, .escala .container td {
+    padding: 0.2rem 0.5rem;
   }
 }/*# sourceMappingURL=EscalaStyle.css.map */

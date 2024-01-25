@@ -58,19 +58,26 @@
 	}
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 400px){
 	.escala{
 		.container{
 			margin: 0 .5rem;
 		  table{
 			font-size: .6rem;
 		  }
-		  th{
-			padding: 0;
-		  }
-		  td{
-			padding: 0;
+		  th, td{
+			padding: .1rem .1rem;
 		  }
 		}
 	}
-  }
+}
+@media screen and (max-width: 800px) and (min-width: 401px){
+	.escala{
+		.container{
+			margin: 0 .5rem;
+		  th, td{
+			padding: .2rem .5rem;
+		  }
+		}
+	}
+}
