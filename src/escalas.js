@@ -30,7 +30,7 @@ export const escalaLouvor = {
 	positions: ['voz principal', 'back vocal', 'bateria', 'baixo', 'guitarra', 'violão', 'teclado', 'sopro'],
 	people: [
 		{
-			name: 'felipe',
+			name: 'Felipe',
 			days: ['terça-feira', 'quarta-feira', 'domingo'],
 			pos: ['voz principal', 'teclado', 'back vocal']
 		},

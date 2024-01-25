@@ -22,7 +22,15 @@ export const gerarEscala = (date, propsEscala, daysMonth) => {
 			// console.log(novoNome)
 			if(propsEscala.people[indice].days.includes(days[i])){
 				if(propsEscala.people[indice].pos.includes(pos)){
-					if(!list.includes(novoNome)){
+					if(days[i] == 'terça-feira'){
+						if(nomeAntigo != novoNome){
+							escala.push(novoNome)
+							list.push(novoNome)
+							nomeAntigo = novoNome
+							break
+						}
+					}
+					else if(!list.includes(novoNome)){
 						if(nomeAntigo != novoNome){
 							escala.push(novoNome)
 							list.push(novoNome)
@@ -49,7 +57,6 @@ export const gerarEscala = (date, propsEscala, daysMonth) => {
 					if(propsEscala.people[indice].days.includes(days[i])){
 						if(nomeAntigo != novoNome){
 							escala.push(novoNome)
-							list.push(novoNome)
 							nomeAntigo = novoNome
 							break
 						}
