@@ -99,8 +99,9 @@ export const gerarEscala = (date, propsEscala, daysMonth) => {
 								if(propsEscala.people[indice].pos.includes('voz principal')){
 									if(nomeAntigo != novoNome){
 										// console.log('push: '+novoNome)
+										// vozes.push('| ')
 										vozes.push(novoNome)
-										vozes.push(' ')
+										vozes.push(' | ')
 										nomeAntigo = novoNome
 										count++
 									}
@@ -128,8 +129,9 @@ export const gerarEscala = (date, propsEscala, daysMonth) => {
 									if(!vozes.includes(novoNome)){
 										if(nomeAntigo != novoNome){
 											// console.log('push: '+novoNome)
+											// backs.push('| ')
 											backs.push(novoNome)
-											backs.push(' ')
+											backs.push(' | ')
 											nomeAntigo = novoNome
 	
 											count++

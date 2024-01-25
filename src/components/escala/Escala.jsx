@@ -14,6 +14,16 @@ function Escala(props) {
     setEscala(newEscala)
   }
 
+
+  const changeName = (e) => {
+    // var newName = prompt("atualize", e.target.innerHTML)
+    var newName = prompt("atualize", e.target.textContent)
+    if (newName !== null) {
+      // e.target.innerHTML = newName;
+      e.target.textContent = newName;
+    }
+  }
+
   return (
     <>
       <div className="escala">
@@ -50,7 +60,7 @@ function Escala(props) {
                     {props.escala.positions.map((_, indexI) => {
                       // c++
                       return ['terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo'].includes(dayOfWeek) ? (
-                      <td key={indexI}>
+                      <td key={indexI} onClick={changeName}>
                         {index == 0 ? escala[indexI] : escala[indexI+((index)*props.escala.positions.length)]}
                       </td>
                       ) : (
