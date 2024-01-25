@@ -12,8 +12,8 @@ export const gerarEscala = (date, propsEscala, daysMonth) => {
 		days.push(dayOfWeek);
 	});
 
-	const selectPersonLouvor = (i, pos) => {
-		console.log('selectPersonLouvor')
+	const selectPerson = (i, pos) => {
+		// console.log('selectPerson')
 		// eslint-disable-next-line no-constant-condition
 		while(true){
 			const numeroAleatorio = Math.random();
@@ -22,12 +22,13 @@ export const gerarEscala = (date, propsEscala, daysMonth) => {
 			// console.log(novoNome)
 			if(propsEscala.people[indice].days.includes(days[i])){
 				if(propsEscala.people[indice].pos.includes(pos)){
-					console.log(pos)
-					if(nomeAntigo != novoNome){
-						console.log('push: '+novoNome)
-						escala.push(novoNome)
-						nomeAntigo = novoNome
-						break
+					if(!list.includes(novoNome)){
+						if(nomeAntigo != novoNome){
+							escala.push(novoNome)
+							list.push(novoNome)
+							nomeAntigo = novoNome
+							break
+						}
 					}
 				}
 			}
@@ -48,6 +49,7 @@ export const gerarEscala = (date, propsEscala, daysMonth) => {
 					if(propsEscala.people[indice].days.includes(days[i])){
 						if(nomeAntigo != novoNome){
 							escala.push(novoNome)
+							list.push(novoNome)
 							nomeAntigo = novoNome
 							break
 						}
@@ -63,6 +65,8 @@ export const gerarEscala = (date, propsEscala, daysMonth) => {
 	else if(propsEscala.title == 'Escala do Louvor'){
 		for (let i = 0; i < days.length; i++) {
 			var count = 0
+			var amount = 0
+			var list = []
 			for (let j = 0; j < propsEscala.positions.length; j++) {
 				// eslint-disable-next-line no-constant-condition
 				while(true){
@@ -70,10 +74,9 @@ export const gerarEscala = (date, propsEscala, daysMonth) => {
 						escala.push('segunda')
 						break
 					}
-					
 					if(j == 0){
 						count = 0
-						var amount = 0
+						amount = 0
 						var vozes = []
 						if(days[i] == 'quarta-feira'){
 							amount = 1
@@ -88,7 +91,7 @@ export const gerarEscala = (date, propsEscala, daysMonth) => {
 							if(propsEscala.people[indice].days.includes(days[i])){
 								if(propsEscala.people[indice].pos.includes('voz principal')){
 									if(nomeAntigo != novoNome){
-										console.log('push: '+novoNome)
+										// console.log('push: '+novoNome)
 										vozes.push(novoNome)
 										vozes.push(' ')
 										nomeAntigo = novoNome
@@ -117,7 +120,7 @@ export const gerarEscala = (date, propsEscala, daysMonth) => {
 								if(propsEscala.people[indice].pos.includes('back vocal')){
 									if(!vozes.includes(novoNome)){
 										if(nomeAntigo != novoNome){
-											console.log('push: '+novoNome)
+											// console.log('push: '+novoNome)
 											backs.push(novoNome)
 											backs.push(' ')
 											nomeAntigo = novoNome
@@ -132,27 +135,71 @@ export const gerarEscala = (date, propsEscala, daysMonth) => {
 						break
 					}
 					else if(j == 2){
-						selectPersonLouvor(i, 'bateria')
+						selectPerson(i, 'bateria')
 						break
 					}
 					else if(j == 3){
-						selectPersonLouvor(i, 'baixo')
+						selectPerson(i, 'baixo')
 						break
 					}
 					else if(j == 4){
-						selectPersonLouvor(i, 'guitarra')
+						selectPerson(i, 'guitarra')
 						break
 					}
 					else if(j == 5){
-						selectPersonLouvor(i, 'violão')
+						selectPerson(i, 'violão')
 						break
 					}
 					else if(j == 6){
-						selectPersonLouvor(i, 'teclado')
+						selectPerson(i, 'teclado')
 						break
 					}
 					else if(j == 7){
-						selectPersonLouvor(i, 'sopro')
+						selectPerson(i, 'sopro')
+						break
+					}
+				}
+			}
+		}
+	}
+	else if(propsEscala.title == 'Escala da Filmagem'){
+		for (let i = 0; i < days.length; i++) {
+			list = []
+			for (let j = 0; j < propsEscala.positions.length; j++) {
+				// eslint-disable-next-line no-constant-condition
+				while(true){
+					if(days[i] == 'segunda-feira'){
+						escala.push('segunda')
+						break
+					}
+					if(days[i] == 'terça-feira'){
+						if(j == 0){
+							selectPerson(i, 'mesa de corte')
+							break
+						}
+						escala.push(' ')
+						break
+					}
+					if(days[i] == 'quinta-feira' || days[i] == 'sexta-feira'){
+						if(j == 3){
+							escala.push(' ')
+							break
+						}
+					}
+					if(j == 0){
+						selectPerson(i, 'mesa de corte')
+						break
+					}
+					if(j == 1){
+						selectPerson(i, 'joystick')
+						break
+					}
+					if(j == 2){
+						selectPerson(i, 'notebook')
+						break
+					}
+					if(j == 3){
+						selectPerson(i, 'camera 4')
 						break
 					}
 				}
@@ -160,7 +207,7 @@ export const gerarEscala = (date, propsEscala, daysMonth) => {
 		}
 	}
 
-    console.log(escala);
+    // console.log(escala);
 	return escala
 }
 

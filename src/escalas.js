@@ -236,24 +236,80 @@ export const escalaFilmagem = {
 	positions: ['mesa de corte', 'joystick', 'notebook', 'camera 4'],
 	people: [
 		{
-			name: 'gabriel',
-			days: ['quinta', 'sexta', 'domingo noite'],
-			pos: ['mesa de corte', 'joystick', 'notebook', 'camera 4']
+			name: 'Marcelo',
+			days: ['quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo'],
+			pos: ['mesa de corte', 'joystick', 'notebook']
 		},
 		{
-			name: 'silas',
-			days: ['quarta', 'sexta', 'domingo manhã'],
-			pos: ['joystick', 'notebook']
+			name: 'Gleidson',
+			days: ['quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo'],
+			pos: ['mesa de corte', 'joystick', 'notebook']
 		},
 		{
-			name: 'luis',
-			days: ['quinta', 'sexta'],
+			name: 'Bruno',
+			days: ['quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo'],
+			pos: ['mesa de corte', 'joystick', 'notebook']
+		},
+		{
+			name: 'Edmilson',
+			days: ['quarta-feira', 'sexta-feira', 'sábado', 'domingo'],
+			pos: ['mesa de corte', 'joystick', 'notebook']
+		},
+		{
+			name: 'Luis',
+			days: ['quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo'],
+			pos: ['mesa de corte', 'joystick', 'notebook']
+		},
+		{
+			name: 'Naldo',
+			days: ['quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo'],
 			pos: ['camera 4']
 		},
 		{
-			name: 'alessandra',
-			days: ['terça'],
-			pos: ['mesa de corte', 'camera 4']
-		}
+			name: 'Vanailton',
+			days: ['quarta-feira', 'sexta-feira', 'sábado', 'domingo'],
+			pos: ['mesa de corte', 'joystick', 'notebook']
+		},
+		{
+			name: 'Leo',
+			days: ['quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo'],
+			pos: ['mesa de corte', 'joystick', 'notebook']
+		},
+		{
+			name: 'Telles',
+			days: ['quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo'],
+			pos: ['mesa de corte', 'joystick', 'notebook']
+		},
+		{
+			name: 'Gabriel',
+			days: ['terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo'],
+			pos: ['mesa de corte', 'joystick', 'notebook']
+		},
+		{
+			name: 'Ademário',
+			days: ['quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo'],
+			pos: ['camera 4']
+		},
+		{
+			name: 'Matheus',
+			days: ['quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo'],
+			pos: ['camera 4']
+		},
+		{
+			name: 'Kailan',
+			days: ['quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo'],
+			pos: ['camera 4']
+		},
+		{
+			name: 'Michel',
+			days: ['quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo'],
+			pos: ['mesa de corte', 'joystick', 'notebook']
+		},
+		{
+			name: 'Ronald',
+			days: ['sábado', 'domingo'],
+			pos: ['mesa de corte', 'joystick', 'notebook']
+		},
+		
 	]
 }

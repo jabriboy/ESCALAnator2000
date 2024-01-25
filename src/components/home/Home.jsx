@@ -1,8 +1,8 @@
 import './style/HomeStyle.css'
 import Escala from "../escala/Escala";
 // import { escalaMixagem } from '../../escalas';
-import { escalaMixagem, escalaLouvor } from '../../escalas';
-// import { escalaMixagem, escalaLouvor, escalaFilmagem } from '../../escalas';
+// import { escalaMixagem, escalaLouvor } from '../../escalas';
+import { escalaMixagem, escalaLouvor, escalaFilmagem } from '../../escalas';
 
 function Home(){
 
@@ -12,7 +12,7 @@ function Home(){
 			<div className="container">
 				<Escala escala={escalaLouvor}/>
 				<Escala escala={escalaMixagem}/>
-				{/* <Escala escala={escalaFilmagem}/> */}
+				<Escala escala={escalaFilmagem}/>
 			</div>
 		</div>
 		</>
