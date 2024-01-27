@@ -56,15 +56,25 @@
   color: #1f1f1f;
   transition: 0.2s;
 }
+.escala .container .div-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
 .escala .container .btn-baixar {
+  cursor: pointer;
   transition: 0.2s;
   background: #720000;
   color: white;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 0.5rem 1.2rem;
-  margin: 0 auto 1rem auto;
+  padding: 0.3rem 1.2rem;
   border-radius: 2.21875rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: 0.2s;
+  margin-right: 0.5rem;
 }
 .escala .container .btn-baixar:hover {
   transition: 0.2s;
@@ -72,6 +82,7 @@
   color: #1f1f1f;
 }
 .escala .container .btn-gerar {
+  margin-left: 0.5rem;
   cursor: pointer;
   background: #720000;
   width: -moz-fit-content;
@@ -82,7 +93,6 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.2rem;
-  margin: 2rem auto 4rem auto;
   transition: 0.2s;
 }
 .escala .container .btn-gerar:hover {

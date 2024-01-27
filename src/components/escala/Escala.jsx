@@ -17,7 +17,7 @@ function Escala(props) {
   }
 
   const baixarPDF = () => {
-    const input = document.getElementById('table');
+    const input = document.getElementById(props.escala.title);
     
     html2canvas(input)
       .then((canvas) => {
@@ -55,7 +55,7 @@ function Escala(props) {
       e.target.textContent = newName;
     }
   }
-
+  
   return (
     <>
       <div className="escala">
@@ -66,8 +66,11 @@ function Escala(props) {
             <p>mês da escala</p>
             <div className="btn-month" onClick={monthUp}>+</div>
           </div>
-          <div className="btn-baixar" onClick={baixarPDF}>baixar em PDF</div>
-          <table id='table'>
+          <div className="div-btns">
+            <div className="btn-baixar" onClick={baixarPDF}>baixar em PDF</div>
+            <div onClick={gerar} className="btn-gerar">gerar</div>
+          </div>
+          <table id={props.escala.title}>
             <thead>
               <tr>
                 <th>data</th>
@@ -114,7 +117,6 @@ function Escala(props) {
               })}
             </tbody>
           </table>
-          <div onClick={gerar} className="btn-gerar">gerar</div>
         </div>
       </div>
     </>
