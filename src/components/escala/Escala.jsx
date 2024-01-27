@@ -4,9 +4,9 @@ import './style/EscalaStyle.css';
 import gerarEscala from './gerador.js'
 
 function Escala(props) {
-  const [date] = useState(new Date());
-  const [lastDay] = useState(new Date(date.getFullYear(), date.getMonth() + 1, 0));
-  const [daysMonth] = useState(Array.from({ length: lastDay.getDate() - date.getDate() + 1 }, (_, index) => index));
+  const [date, setDate] = useState(new Date());
+  const [lastDay, setLastDay] = useState(new Date(date.getFullYear(), date.getMonth() + 1, 0));
+  const [daysMonth, setDaysMonth] = useState(Array.from({ length: lastDay.getDate() - date.getDate() + 1 }, (_, index) => index));
   const [escala, setEscala] = useState([]);
 
   const gerar = () => {
@@ -14,6 +14,25 @@ function Escala(props) {
     setEscala(newEscala)
   }
 
+  const monthUp = () => {
+    const newDate = new Date()
+    newDate.setDate(1)
+    newDate.setMonth(date.getMonth()+1)
+    setDate(newDate)
+    const newLastDate = new Date(newDate.getFullYear(), newDate.getMonth() + 1, 0)
+    setLastDay(newLastDate)
+    setDaysMonth(Array.from({ length: newLastDate.getDate() }, (_, index) => index))
+  }
+  
+  const monthDown = () => {
+    const newDate = new Date()
+    newDate.setDate(1)
+    newDate.setMonth(date.getMonth()-1)
+    setDate(newDate)
+    const newLastDate = new Date(newDate.getFullYear(), newDate.getMonth() + 1, 0)
+    setLastDay(newLastDate)
+    setDaysMonth(Array.from({ length: newLastDate.getDate() }, (_, index) => index))
+  }
 
   const changeName = (e) => {
     // var newName = prompt("atualize", e.target.innerHTML)
@@ -28,7 +47,12 @@ function Escala(props) {
     <>
       <div className="escala">
         <div className="container">
-          <h1>{props.escala.title} - {date.toLocaleDateString('default', { month: 'long' })}</h1>
+          <h1>{props.escala.title} - {date.toLocaleDateString('default', { month: 'long' })} {date.getFullYear()}</h1>
+          <div className="div-month">
+            <div className="btn-month" onClick={monthUp}>+</div>
+            <p>mês da escala</p>
+            <div className="btn-month" onClick={monthDown}>-</div>
+          </div>
           <table>
             <thead>
               <tr>

@@ -35,6 +35,27 @@
 .escala .container .segunda-feira {
   background-color: black;
 }
+.escala .container .div-month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2rem;
+  margin-bottom: 1rem;
+}
+.escala .container .div-month .btn-month {
+  transition: 0.2s;
+  cursor: pointer;
+  background: #720000;
+  color: white;
+  padding: 0.5rem 0.8rem;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+}
+.escala .container .div-month .btn-month:hover {
+  background-color: #e39595;
+  color: #1f1f1f;
+  transition: 0.2s;
+}
 .escala .container .btn-gerar {
   cursor: pointer;
   background: #720000;
@@ -66,11 +87,11 @@
     padding: 0.1rem 0.1rem;
   }
 }
-@media screen and (max-width: 800px) and (min-width: 401px) {
+@media screen and (max-width: 1000px) and (min-width: 401px) {
   .escala .container {
     margin: 0 0.5rem;
   }
   .escala .container th, .escala .container td {
-    padding: 0.2rem 0.5rem;
+    padding: 0rem 0.5rem;
   }
 }/*# sourceMappingURL=EscalaStyle.css.map */
