@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import './style/EscalaStyle.css';
 import gerarEscala from './gerador.js'
+import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
 
 function Escala(props) {
   const [date, setDate] = useState(new Date());
@@ -12,6 +14,17 @@ function Escala(props) {
   const gerar = () => {
     const newEscala = gerarEscala(date, props.escala, daysMonth)
     setEscala(newEscala)
+  }
+
+  const baixarPDF = () => {
+    const input = document.getElementById('table');
+    
+    html2canvas(input)
+      .then((canvas) => {
+        const pdf = new jsPDF('p', 'mm', 'a4');
+        pdf.addImage(canvas.toDataURL('image/png'), 'PNG', 0, 0, 210, 297); // A4 size
+        pdf.save('tabela.pdf');
+      })
   }
 
   const monthUp = () => {
@@ -53,7 +66,8 @@ function Escala(props) {
             <p>mês da escala</p>
             <div className="btn-month" onClick={monthUp}>+</div>
           </div>
-          <table>
+          <div className="btn-baixar" onClick={baixarPDF}>baixar em PDF</div>
+          <table id='table'>
             <thead>
               <tr>
                 <th>data</th>
