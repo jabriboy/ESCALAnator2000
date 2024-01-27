@@ -3,22 +3,22 @@ export const escalaMixagem = {
 	positions: ['mesa de som'],
 	people: [
 		{
-			name: 'gabriel',
+			name: 'Gabriel',
 			days: ['quarta-feira', 'quinta-feira', 'sexta-feira', 'domingo'],
 			pos: ['mesa de som']
 		},
 		{
-			name: 'silas',
+			name: 'Silas',
 			days: ['quarta-feira', 'sábado'],
 			pos: ['mesa de som']
 		},
 		{
-			name: 'luis',
+			name: 'Luiz',
 			days: ['quinta-feira', 'sexta-feira'],
 			pos: ['mesa de som']
 		},
 		{
-			name: 'alessandra',
+			name: 'Alessandra',
 			days: ['terça-feira'],
 			pos: ['mesa de som']
 		}

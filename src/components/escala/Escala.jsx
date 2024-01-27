@@ -49,9 +49,9 @@ function Escala(props) {
         <div className="container">
           <h1>{props.escala.title} - {date.toLocaleDateString('default', { month: 'long' })} {date.getFullYear()}</h1>
           <div className="div-month">
-            <div className="btn-month" onClick={monthUp}>+</div>
-            <p>mês da escala</p>
             <div className="btn-month" onClick={monthDown}>-</div>
+            <p>mês da escala</p>
+            <div className="btn-month" onClick={monthUp}>+</div>
           </div>
           <table>
             <thead>
