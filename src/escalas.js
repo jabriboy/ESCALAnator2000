@@ -9,7 +9,7 @@ export const escalaMixagem = {
 		},
 		{
 			name: 'Silas',
-			days: ['quarta-feira', 'sábado'],
+			days: ['quarta-feira', 'sábado', 'domingo'],
 			pos: ['mesa de som']
 		},
 		{
@@ -146,6 +146,11 @@ export const escalaLouvor = {
 			name: 'Laís',
 			days: ['quarta-feira', 'sexta-feira', 'sábado', 'domingo'],
 			pos: ['voz principal', 'back vocal']
+		},
+		{
+			name: 'Gisele',
+			days: ['quarta-feira', 'sexta-feira', 'sábado', 'domingo'],
+			pos: ['voz principal']
 		},
 		{
 			name: 'Isabele',
