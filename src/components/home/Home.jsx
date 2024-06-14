@@ -2,7 +2,8 @@ import './style/HomeStyle.css'
 import Escala from "../escala/Escala";
 // import { escalaMixagem } from '../../escalas';
 // import { escalaMixagem, escalaLouvor } from '../../escalas';
-import { escalaMixagem, escalaLouvor, escalaFilmagem } from '../../escalas';
+import { escalaMixagem,  escalaFilmagem } from '../../escalas';
+// import { escalaMixagem, escalaLouvor, escalaFilmagem } from '../../escalas';
 
 function Home(){
 
