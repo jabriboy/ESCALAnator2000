@@ -10,7 +10,7 @@ function Home(){
 		<>
 		<div className="home">
 			<div className="container">
-				<Escala escala={escalaLouvor}/>
+				{/* <Escala escala={escalaLouvor}/> */}
 				<Escala escala={escalaMixagem}/>
 				<Escala escala={escalaFilmagem}/>
 			</div>
