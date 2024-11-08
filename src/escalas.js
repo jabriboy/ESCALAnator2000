@@ -246,18 +246,8 @@ export const escalaFilmagem = {
 			pos: ['mesa de corte', 'joystick', 'notebook']
 		},
 		{
-			name: 'Gleidson',
-			days: ['quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo'],
-			pos: ['mesa de corte', 'joystick', 'notebook']
-		},
-		{
 			name: 'Bruno',
 			days: ['quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo'],
-			pos: ['mesa de corte', 'joystick', 'notebook']
-		},
-		{
-			name: 'Edmilson',
-			days: ['quarta-feira', 'sexta-feira', 'sábado', 'domingo'],
 			pos: ['mesa de corte', 'joystick', 'notebook']
 		},
 		{
@@ -271,12 +261,7 @@ export const escalaFilmagem = {
 			pos: ['camera 4']
 		},
 		{
-			name: 'Vanailton',
-			days: ['quarta-feira', 'sexta-feira', 'sábado', 'domingo'],
-			pos: ['mesa de corte', 'joystick', 'notebook']
-		},
-		{
-			name: 'Leo',
+			name: 'Leandro',
 			days: ['quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo'],
 			pos: ['mesa de corte', 'joystick', 'notebook']
 		},
@@ -287,7 +272,12 @@ export const escalaFilmagem = {
 		},
 		{
 			name: 'Gabriel',
-			days: ['terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo'],
+			days: ['terça-feira'],
+			pos: ['mesa de corte', 'joystick', 'notebook']
+		},
+		{
+			name: 'Raquel',
+			days: ['terça-feira'],
 			pos: ['mesa de corte', 'joystick', 'notebook']
 		},
 		{
@@ -315,6 +305,10 @@ export const escalaFilmagem = {
 			days: ['sábado', 'domingo'],
 			pos: ['mesa de corte', 'joystick', 'notebook']
 		},
-		
+		{
+			name: 'Robinho',
+			days: ['sábado', 'domingo', 'quarta-feira', 'quinta-feira', 'sexta-feira'],
+			pos: ['mesa de corte', 'joystick', 'notebook']
+		}
 	]
 }
